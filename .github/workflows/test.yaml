@@ -32,4 +32,4 @@ jobs:
       - name: Install Dependencies
         if: steps.cache-nodemodules.outputs.cache-hit != 'true'
         run: npm ci
-      - run: npm audit --audit-level=moderate
+      - run: npm audit --audit-level=high
